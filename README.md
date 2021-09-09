@@ -1,4 +1,4 @@
-# nfl-pickem
+# NFL Pick Em App
 A web app that assigns confidence points to NFL games
 
 ## Development
