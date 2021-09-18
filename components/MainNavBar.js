@@ -20,7 +20,6 @@ export default function MainNavBar() {
             <FontAwesomeIcon icon={faFootballBall} size='lg'/>
           </NavBar.Brand>
           <Nav.Link href='#MyLeagues'>My Leagues</Nav.Link>
-          <Nav.Link href='#history'>History</Nav.Link>
         </Nav>
         <Button title='Sign Out' variant='dark' onClick={handleLogout}>
           <FontAwesomeIcon icon={faSignOutAlt}></FontAwesomeIcon>
