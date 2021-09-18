@@ -1,15 +1,13 @@
 import '../styles/globals.css';
-import initAuth from '../utilities/firebaseConfig';
-
-try {
-  initAuth();
-} catch (error) {
-  console.log('Firebase admin initialization error', error.stack);
-}
-
+import { Auth } from '@supabase/ui';
+import { supabase } from '../utilities/supabaseConfig';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <Auth.UserContextProvider supabaseClient={supabase}>
+      <Component {...pageProps} />
+    </Auth.UserContextProvider>
+  );
 }
 
 export default MyApp
