@@ -10,8 +10,9 @@ export default function MainNavBar() {
   const [showLoginModal, setShowLoginModal] = useState(false);
   const handleClose = () => setShowLoginModal(false);
   const handleOpen = () => setShowLoginModal(true);
-  const handleLogin = () => {
-    console.log('Log me in!');
+  const handleLogin = (email, password) => {
+    if (email) console.log('got an email');
+    if (password) console.log('got a password');
     setShowLoginModal(false);
   };
 
