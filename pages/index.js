@@ -30,7 +30,8 @@ export default function Home() {
       {!user ? (
         <div className={styles.homeContainer}>
           <Container>
-            <Auth 
+            <Auth
+              className={styles.authContainer}
               supabaseClient={supabase}
               socialLayout='horizontal'
               socialButtonSize='xlarge'>

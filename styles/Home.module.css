@@ -5,3 +5,6 @@
   background-color: var(--bs-dark);
   color: white;
 }
+.authContainer {
+  color: white !important;
+}
