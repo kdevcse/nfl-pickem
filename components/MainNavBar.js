@@ -3,13 +3,11 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import styles from '../styles/MainNavBar.module.css';
 import Button from 'react-bootstrap/Button';
-import { supabase } from '../utilities/supabaseConfig';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFootballBall, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
 export default function MainNavBar() {
   const handleLogout = () => {
-    supabase.auth.signOut();
   }
 
   return (
