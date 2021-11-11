@@ -11,15 +11,16 @@ export default function ScheduleEditor() {
   });
   
   async function getData() {
-    const docRef = doc(firestore, 'info', 'FO8bmteLTRQ1wU1pqEGs');
-    const docSnap = await getDoc(docRef);
+    const infoRef = doc(firestore, 'info', 'FO8bmteLTRQ1wU1pqEGs');
+    const infoSnap = await getDoc(infoRef);
 
-    if (docSnap.exists()) {
-      console.log(docSnap.data());
+    if (infoSnap.exists()) {
+      
+      console.log(infoSnap.data());
     } else {
-      console.log('data not found');
+      console.log('Info data not found');
     }
-}
+  }
 
   return(
     <>
