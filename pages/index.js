@@ -1,7 +1,6 @@
 import MainNavBar from '../components/MainNavBar';
 import Container from 'react-bootstrap/Container';
 import styles from '../styles/Home.module.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect } from 'react';
 import { doc, getDoc } from 'firebase/firestore';
 import { firestore } from '../utilities/firebaseConfig';

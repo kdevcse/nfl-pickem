@@ -14,10 +14,10 @@ export default function MainNavBar() {
     <NavBar bg='dark' variant='dark'>
       <Container>
         <Nav activeKey='#home'>
-          <NavBar.Brand className={styles.navBrand} href='#home'>
+          <NavBar.Brand className={styles.navBrand} href='/'>
             <FontAwesomeIcon icon={faFootballBall} size='lg'/>
           </NavBar.Brand>
-          <Nav.Link href='#MyLeagues'>My Leagues</Nav.Link>
+          <Nav.Link href='/admin'>Admin</Nav.Link>
         </Nav>
         <Button title='Sign Out' variant='dark' onClick={handleLogout}>
           <FontAwesomeIcon icon={faSignOutAlt}></FontAwesomeIcon>
